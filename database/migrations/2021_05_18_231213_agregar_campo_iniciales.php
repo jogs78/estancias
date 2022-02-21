@@ -13,10 +13,9 @@ class AgregarCampoIniciales extends Migration
      */
     public function up()
     {
-        //ALTER TABLE `proyectos` ADD `iniciales` VARCHAR(5) NULL AFTER `nombre`;
-        
-        Schema::table('proyectos', function (Blueprint $table) {
-            $table->string('iniciales',5)->nullable()->after('nombre');
+        //        users
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('carta')->nullable();
         });
 
     }

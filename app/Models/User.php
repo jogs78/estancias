@@ -21,7 +21,7 @@ class User extends Authenticatable
 	use Notifiable;
 	
     public $timestamps = false;
-    protected $fillable = ['nombre','apellido','telefono','email', 'password','numcontrol','path','activo','status','rol','carta'];
+    protected $fillable = ['nombre','apellido','telefono','email', 'password','numcontrol','path','activo','status','tipo_usuario','carta'];
 
 
     /*

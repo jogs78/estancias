@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Jefe"  ,
+            'tipo_usuario' => "Jefe"  ,
             
         ]);
         DB::table('users')->insert([
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Auxiliar"  ,
+            'tipo_usuario' => "Auxiliar"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Aux2",
@@ -47,7 +47,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Auxiliar"  ,
+            'tipo_usuario' => "Auxiliar"  ,
         ]);
         
         DB::table('users')->insert([
@@ -60,7 +60,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Auxiliar"  ,
+            'tipo_usuario' => "Auxiliar"  ,
         ]);
         
         DB::table('users')->insert([
@@ -73,7 +73,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Auxiliar"  ,
+            'tipo_usuario' => "Auxiliar"  ,
         ]);
         
         DB::table('users')->insert([
@@ -86,7 +86,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador2",
@@ -98,7 +98,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador3",
@@ -110,7 +110,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador4",
@@ -122,7 +122,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador5",
@@ -134,7 +134,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador6",
@@ -146,7 +146,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador7",
@@ -158,7 +158,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
         DB::table('users')->insert([
             'nombre' => "Prestador8",
@@ -170,7 +170,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Prestador"  ,
+            'tipo_usuario' => "Prestador"  ,
         ]);
 
 
@@ -184,7 +184,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Externo"  ,
+            'tipo_usuario' => "Externo"  ,
         ]);
 
 
@@ -199,7 +199,7 @@ class UserSeeder extends Seeder
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
-            'rol' => "Aspirante"  ,
+            'tipo_usuario' => "Aspirante"  ,
         ]);
     
     }

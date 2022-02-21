@@ -19,7 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('email')->unique();
             $table->string('n_control');
             $table->string('nombre');
-            $table->enum('rol', ['Jefe', 'Auxiliar','Externo','Prestador'])->default('Prestador');;
+            $table->enum('tipo_usuario', ['Jefe', 'Auxiliar','Externo','Prestador'])->default('Prestador');;
             $table->string('password');
             
 

@@ -32,7 +32,7 @@ class InicioControler extends Controller
         $user = Auth::user();
         if (is_null($user)) die;
 
-        switch ($user->rol) {
+        switch ($user->tipo_usuario) {
             case 'Jefe':
                 $usuarios = User::all();
                 $proyectos = Proyecto::where('activo',1)->get();

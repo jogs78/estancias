@@ -14,11 +14,11 @@ class RolMiddlewere
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->rol=='Jefe' ) 
+        if (Auth::check() && Auth::user()->tipo_usuario=='Jefe' ) 
             return $next($request);
-            if (Auth::check() && Auth::user()->rol=='Auxiliar')
+            if (Auth::check() && Auth::user()->tipo_usuario=='Auxiliar')
                 return $next($request);
-                    if (Auth::check() && Auth::user()->rol=='Prestador')
+                    if (Auth::check() && Auth::user()->tipo_usuario=='Prestador')
                     return $next($request);
                     else
                     {

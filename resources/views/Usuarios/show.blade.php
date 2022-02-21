@@ -40,7 +40,7 @@
                       <td>{{$usuario->apellido}}</td>
                       <td>{{$usuario->telefono}}</td>
                       <td>{{$usuario->numcontrol}}</td>
-                      <td>{{$usuario->rol}}</td>
+                      <td>{{$usuario->tipo_usuario}}</td>
                       <td>{{$usuario->status}}</td>
                       <td>{{$usuario->activo}}</td>
                       <td>{{$usuario->email}}</td>

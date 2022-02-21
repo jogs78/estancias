@@ -30,7 +30,7 @@ class ProyectoControler extends Controller
     
     public function __construct()
     {
-        $this->middleware('rol');
+        $this->middleware('tipo_usuario');
     }
 
 
@@ -94,7 +94,7 @@ class ProyectoControler extends Controller
         $valores = $request->all();
         $id = $request->input('prestador_id');
         $usuario = User::find($id);
-        $usuario->rol="Prestador";
+        $usuario->tipo_usuario="Prestador";
         $usuario->save();
 
         

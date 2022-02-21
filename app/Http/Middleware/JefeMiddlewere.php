@@ -15,7 +15,7 @@ class JefeMiddlewere
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->rol=='Jefe' ) 
+        if (Auth::check() && Auth::user()->tipo_usuario=='Jefe' ) 
             return $next($request);
             
                 else
