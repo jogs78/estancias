@@ -16,6 +16,7 @@ class CreateProyectosTable extends Migration
         Schema::create('proyectos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('iniciales',5)->nullable();
             $table->string('d_actividades');
             $table->tinyInteger('activo')->default(1);
             $table->foreignId('prestador_id')
