@@ -34,16 +34,16 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         Gate::define('jefe-only', function ($user) {
-            return $user->rol == "Jefe";
+            return $user->tipo_usuario == "Jefe";
         });
         Gate::define('auxiliar-jefe', function ($user) {
-            return $user->rol == "Jefe" || $user->rol == "Auxiliar";
+            return $user->tipo_usuario == "Jefe" || $user->tipo_usuario == "Auxiliar";
         });
         Gate::define('externo-jefe', function ($user) {
-            return $user->rol == "Jefe" || $user->rol == "Externo";
+            return $user->tipo_usuario == "Jefe" || $user->tipo_usuario == "Externo";
         });
         Gate::define('prestador-jefe', function ($user) {
-            return $user->rol == "Jefe" || $user->rol == "Prestador";
+            return $user->tipo_usuario == "Jefe" || $user->tipo_usuario == "Prestador";
         });
     
     }

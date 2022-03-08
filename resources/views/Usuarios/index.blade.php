@@ -35,7 +35,7 @@
                             <td>{{$usuario->nombre}} {{$usuario->apellido_paterno}} {{$usuario->apellido_paterno}}</td>
                             
                             <td  data-original="{{$usuario->apellido}}">{{$usuario->apellido}}</td>
-                            <td  data-original="{{$usuario->rol}}">{{$usuario->rol}}</td>
+                            <td  data-original="{{$usuario->tipo_usuario}}">{{$usuario->tipo_usuario}}</td>
                             <td><img src="/images/{{$usuario->path}}" alt="" style="width: 80px;height: 80px; padding: 10px; margin: 0px; " class="img-thumnail"></td>
                         
                             <td>

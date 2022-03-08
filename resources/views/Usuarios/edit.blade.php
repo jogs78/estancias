@@ -91,27 +91,27 @@
             <div class="form-group">
                 <label for="rol">Tipo de usuario:</label>
                 <select class="form-control" name="rol" id="rol" required>
-                    @if ($usuario->rol =="Jefe")
+                    @if ($usuario->tipo_usuario =="Jefe")
                         <option selected>Jefe</option>
                     @else
                         <option>Jefe</option>
                     @endif
-                    @if ($usuario->rol=="Auxiliar")
+                    @if ($usuario->tipo_usuario=="Auxiliar")
                         <option selected>Auxiliar</option>
                     @else
                         <option>Auxiliar</option>
                     @endif
-                    @if ($usuario->rol=="Externo")
+                    @if ($usuario->tipo_usuario=="Externo")
                         <option selected>Externo</option>
                     @else
                         <option>Externo</option>
                     @endif
-                    @if ($usuario->rol=="Prestador")
+                    @if ($usuario->tipo_usuario=="Prestador")
                         <option selected>Prestador</option>
                     @else
                         <option>Prestador</option>
                     @endif
-                    @if ($usuario->rol=="Aspirante")
+                    @if ($usuario->tipo_usuario=="Aspirante")
                     <option selected>Aspirante</option>
                 @else
                         <option>Aspirante</option>

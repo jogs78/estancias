@@ -19,7 +19,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="nombre">Nombre</label>
-                                <input id="nombre" type="text" class="form-control @error('nombre') is-invalid @enderror" name="nombre" value="{{ old('nombre') }}" required autocomplete="nombre" autofocus>   
+                                <input id="nombre" type="text" class="form-conttipo_usuario @error('nombre') is-invalid @enderror" name="nombre" value="{{ old('nombre') }}" required autocomplete="nombre" autofocus>   
                                 @error('nombre ')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -28,7 +28,7 @@
                             </div>                       
                             <div class="col-md-6 mb-3">
                                 <label for="apellido">Apellido</label>
-                                <input id="apellido" type="text" class="form-control @error('apellido') is-invalid @enderror" name="apellido" value="{{ old('apellido') }}" required autocomplete="apellido" autofocus>   
+                                <input id="apellido" type="text" class="form-conttipo_usuario @error('apellido') is-invalid @enderror" name="apellido" value="{{ old('apellido') }}" required autocomplete="apellido" autofocus>   
                                 
                                     @error('apellido ')
                                         <span class="invalid-feedback" role="alert">
@@ -41,7 +41,7 @@
                         <div class=" row">
                             <div class="col-md-6 mb-3">
                                 <label for="email" >Email</label>
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">  
+                                <input id="email" type="email" class="form-conttipo_usuario @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">  
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <label for="password" >{{ __('Contraseña') }}</label>
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror " name="password" required autocomplete="new-password">
+                                <input id="password" type="password" class="form-conttipo_usuario @error('password') is-invalid @enderror " name="password" required autocomplete="new-password">
                                     
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <label for="telefono" >{{ __('Teléfono') }}</label>
-                                <input id="telefono" type="number" class="form-control @error('telefono') is-invalid @enderror " name="telefono" required autocomplete="new-telefono">
+                                <input id="telefono" type="number" class="form-conttipo_usuario @error('telefono') is-invalid @enderror " name="telefono" required autocomplete="new-telefono">
                                     @error('telefono')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

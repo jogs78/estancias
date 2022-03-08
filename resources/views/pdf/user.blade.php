@@ -38,7 +38,7 @@
                       <tr >
                         <td>{{$usuario->nombre}} {{$usuario->apellido_paterno}} {{$usuario->apellido_paterno}}</td>                
                         <td  data-original="{{$usuario->apellido}}">{{$usuario->apellido}}</td>
-                        <td  data-original="{{$usuario->rol}}">{{$usuario->rol}}</td>
+                        <td  data-original="{{$usuario->tipo_usuario}}">{{$usuario->tipo_usuario}}</td>
                        
                     </tr>
                  

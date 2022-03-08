@@ -74,10 +74,10 @@ class ProyectoControler extends Controller
         $this->authorize('create', $proyectos);
         $proyectos = Proyecto::all();
         $usuarios = User::all();
-        $prestadores = User::where("rol","Aspirante")->get();
-        $responsables = User::where("rol","Auxiliar")->get();
+        $prestadores = User::where("tipo_usuario","Aspirante")->get();
+        $responsables = User::where("tipo_usuario","Auxiliar")->get();
         $cartas = User::where("carta")->get();
-        //$uwus = User::select("numcontrol")->get();
+        $uwus = ""; // User::select("numcontrol")->get();
         return view('Proyectos.create',compact('usuarios','proyectos','prestadores','responsables','cartas','uwus'));
     }
 
@@ -94,7 +94,7 @@ class ProyectoControler extends Controller
         $valores = $request->all();
         $id = $request->input('prestador_id');
         $usuario = User::find($id);
-        $usuario->rol="Prestador";
+        $usuario->tipo_usuario="Prestador";
         $usuario->save();
 
         

@@ -18,7 +18,7 @@ class ProyectoPolicy
  
     public function view(User $user, Proyecto $proyecto)
     {
-        return $user->id === $proyecto->responsable_id || $user->id === $proyecto->prestador_id || $user->rol == "Jefe"  ;
+        return $user->id === $proyecto->responsable_id || $user->id === $proyecto->prestador_id || $user->tipo_usuario == "Jefe"  ;
     }
 
     /**
@@ -26,7 +26,7 @@ class ProyectoPolicy
      */
     public function create(User $user, Proyecto $proyectos)
     {
-        return $user->rol == "Jefe"  ;
+        return $user->tipo_usuario == "Jefe"  ;
     }
 
    

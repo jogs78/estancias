@@ -10,7 +10,7 @@
 
 
 @section('content')
-@switch(Auth::user()->rol)
+@switch(Auth::user()->tipo_usuario)
     @case('Jefe')
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">

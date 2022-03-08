@@ -58,7 +58,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'numcontrol' => ['required', 'numeric', 'unique:users'],
-            'rol'
+            'tipo_usuario'
         ]);
     }
 
@@ -80,7 +80,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'activo' => $data['activo']=1,
             'status' => $data['status']=0,
-            'rol' => $data['rol']="Aspirante",
+            'tipo_usuario' => $data['tipo_usuario']="Aspirante",
 
             
         ]);
@@ -100,7 +100,7 @@ class RegisterController extends Controller
         App\Http\Controllers\Auth\RegisterController@register
 
         entiendo que es aqui donde hasheas la clave   
-        duda, se crean bien activo,status y rol ?
+        duda, se crean bien activo,status y tipo_usuario ?
 
         R = Si, porque tienen valor por default en las migraciones.
 

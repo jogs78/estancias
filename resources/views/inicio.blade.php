@@ -31,7 +31,7 @@
                       @forelse ($usuarios as $usuario)
                         <tr class="table table-sm table-bordered" >
                           <td scope="row">{{$usuario->nombre}}</th>
-                          <td scope="row">{{$usuario->rol}}</th>                    
+                          <td scope="row">{{$usuario->tipo_usuario}}</th>                    
                         </tr>                
                       @empty
                         <tr>

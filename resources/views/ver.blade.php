@@ -157,7 +157,7 @@
     </div>
   </div>
   
-@switch(Auth::user()->rol)
+@switch(Auth::user()->tipo_usuario)
     @case('Jefe')
     <script>
       @foreach ($proyecto->horarios as $horario)
