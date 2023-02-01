@@ -13,12 +13,12 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'nombre' => "Mario Alberto",
-            'apellido' => "Cortez Verde" ,
-            'telefono' => "9612776642" ,
-            'email' => "smoke_07@live.com" ,
-            'password' => Hash::make("mario1997") ,
-            'numcontrol' => 15270720 ,
+            'nombre' => "Jorge Octavio",
+            'apellido' => "Guzman Sanchez" ,
+            'telefono' => "9611917915" ,
+            'email' => "jorge.gs1@tuxtla.tecnm.mx" ,
+            'password' => Hash::make("paso") ,
+            'numcontrol' => 96270463 ,
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
@@ -26,61 +26,35 @@ class UserSeeder extends Seeder
             
         ]);
         DB::table('users')->insert([
-            'nombre' => "Aux1",
-            'apellido' => "Hernandez" ,
-            'telefono' => "9612445523" ,
-            'email' => "aux1@live.com" ,
-            'password' => Hash::make("12345678") ,
-            'numcontrol' => 162434520 ,
+            'nombre' => "Rip",
+            'apellido' => "Guzmán" ,
+            'telefono' => "9611917915" ,
+            'email' => "rip@tuxtla.tecnm.mx" ,
+            'password' => Hash::make("paso") ,
+            'numcontrol' => 96270463 ,
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
             'tipo_usuario' => "Auxiliar"  ,
         ]);
         DB::table('users')->insert([
-            'nombre' => "Aux2",
-            'apellido' => "Perez" ,
-            'telefono' => "9612445523" ,
-            'email' => "aux2@live.com" ,
-            'password' => Hash::make("12345678") ,
-            'numcontrol' => 162434520 ,
+            'nombre' => "SII",
+            'apellido' => "Guzmán" ,
+            'telefono' => "9611917915" ,
+            'email' => "investigacion@tuxtla.tecnm.mx" ,
+            'password' => Hash::make("paso") ,
+            'numcontrol' => 96270463 ,
             'path' => 'user.png' ,
             'activo' => 1 ,
             'status' => 0 ,
             'tipo_usuario' => "Auxiliar"  ,
         ]);
-        
+                
         DB::table('users')->insert([
-            'nombre' => "Aux3",
-            'apellido' => "Lopez" ,
-            'telefono' => "9612445523" ,
-            'email' => "aux3@live.com" ,
-            'password' => Hash::make("12345678") ,
-            'numcontrol' => 162434520 ,
-            'path' => 'user.png' ,
-            'activo' => 1 ,
-            'status' => 0 ,
-            'tipo_usuario' => "Auxiliar"  ,
-        ]);
-        
-        DB::table('users')->insert([
-            'nombre' => "Aux4",
-            'apellido' => "Gomez" ,
-            'telefono' => "9612445523" ,
-            'email' => "aux4@live.com" ,
-            'password' => Hash::make("12345678") ,
-            'numcontrol' => 162434520 ,
-            'path' => 'user.png' ,
-            'activo' => 1 ,
-            'status' => 0 ,
-            'tipo_usuario' => "Auxiliar"  ,
-        ]);
-        
-        DB::table('users')->insert([
-            'nombre' => "Prestador1",
-            'apellido' => "Flores" ,
-            'telefono' => "961774412" ,
-            'email' => "prestador1@live.com" ,
+            'nombre' => "Leonardo Daniel",
+            'apellido' => "Guillen Cruz" ,
+            'telefono' => "9191411088" ,
+            'email' => "daniel@live.com" ,
             'password' =>  Hash::make("12345678") ,
             'numcontrol' => 182434520 ,
             'path' => 'user.png' ,

@@ -11,6 +11,7 @@ class ProyectoSeeder extends Seeder
      */
     public function run()
     {
+/*
         DB::table('proyectos')->insert([
             'nombre' => "Proyecto1",
             'd_actividades' => "Proyecto web" ,
@@ -109,5 +110,6 @@ class ProyectoSeeder extends Seeder
             //'carta_id' => "" ,
             //'iniciales' =>"SFL",
         ]);
+    */
     }
 }
