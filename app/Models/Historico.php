@@ -14,7 +14,7 @@ class Historico extends Model
      *
      */
     public $timestamps = false;
-    protected $fillable = ['fecha','dia','hora','tipo','actv','horares','justi','cuantas','proyecto_id'];
+    protected $fillable = ['fecha','dia','hora','tipo','horares','juntas','actv','justi','proyecto_id'];
     
     /**
      * Relacion hasOne entre el modelo Historico y Proyecto

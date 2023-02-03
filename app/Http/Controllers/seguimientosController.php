@@ -101,8 +101,7 @@ class seguimientosController extends Controller
         $valores = $request->all();
         $fecha = $valores['fecha']; // $request->input('fecha'); // "2021-06-01";
         // "01/06/2021" '06/01/2021'
-    
-        
+     
         $valores['dia'] = date("N",strtotime($fecha));
         switch ($valores['dia']) {
             case '1':
@@ -129,9 +128,12 @@ class seguimientosController extends Controller
 
         }
         //dd($valores['dia']);
+        //fecha, dia, hora, tipo, horaes, juntas, actv, justi, proyecto_id
+//PORQUE JUNTAS NO TIENE NADA
         $registro = new Historico();
         $proyecto = Proyecto::find($id);
-        $valores['proyecto_id']=$id;                
+        $valores['proyecto_id']=$id;     
+//        dd($valores);
         $registro->fill($valores);
         $registro->save();
 
